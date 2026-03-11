@@ -2,11 +2,11 @@
 
 
 
-To be implemented in COP3503 probably nearer to the end of the class for extra credit.
+To be implemented in COP3503 in lab discussion for extra credit.
 
 
 
-##### Purpose:
+##### PURPOSE:
 
 
 
@@ -14,7 +14,7 @@ The purpose of this lab activity is to familiarize the students with SFML concep
 
 
 
-##### Activity:
+##### ACTIVITY:
 
 
 
@@ -24,54 +24,32 @@ The students will be required to do the following two steps for extra credit:
 2. Create one of the following features in game: time elapsed display, strike counter, or percent completion tracker.
 
 
+##### SET UP FOR STUDENTS:
 
-##### SET UP FOR TAS:
-
-
-
-1. Create a new CLion project
-2. Download the code off of GitHub and extract the contents into the root of the project folder
-3. Send the `memory_match_students.zip` to the students
-4. Compile and run the project making sure to build with `main_full.cpp` to demonstrate what the students are making
-5. Explain what the students should do (see below)
-6. If there is a specific feature you want to show/give to a student (like for example you want to show them the code for just the strike system), see file explanations
-
-
-
-##### WHAT THE STUDENTS NEED TO DO:
+1. Create a new CLion project named "SFML_EC"
+2. Click on "Code" and then "Download ZIP"
+3. Unzip the contents of the folder into the root of the new CLion project
+4. Build and run the project (hit the green play button); this may take a while for the first time
+5. Abstract the code in `main.cpp` and create 3 new functions: `loadCardTextures()`, `buildDeck()`, and `setLayout()`
+6. After the above, implement one of the features, using online resources and documentation as necessary (see below): time elapsed display, strike counter, or percent completion tracker
+7. `ariel.tff` is already included in the assets folder. If you wish to use `Font`, you may use this one
+8. Examples of the above implementations will be shown by your TA/PM
 
 
 
-1. Create a new CLion project
-2. Unzip `memory_match_students.zip` and move the folder contents to the root directory of the project
-3. Abstract the code in `main.cpp` and create 3 new functions: `loadCardTextures()`, `buildDeck()`, and `setLayout()`
-4. If they run out of time and make a decent attempt at the above, send them the `main_abstracted.cpp` code for them to work with the next step
-5. Attempt to implement one of the features, using online resources and documentation as necessary: time elapsed display, strike counter, or percent completion tracker
-6. Examples of the above implementation can be found in the other files (see file explanations)
-7. If the students make an honest attempt at making the implementations, and still don't do a great job, give them the extra credit
+##### DOCUMENTATION:
+
+Here are some links to help you with understanding the SFML components needed in this activity:
+* RenderWindow: https://www.sfml-dev.org/documentation/3.0.1/classsf_1_1RenderWindow.html
+* Texture: https://www.sfml-dev.org/tutorials/3.0/graphics/sprite/ and https://www.sfml-dev.org/documentation/2.3.2-fr/classsf_1_1Texture.php
+* Event: https://www.sfml-dev.org/tutorials/3.0/window/events/ and https://www.sfml-dev.org/documentation/2.4.0/classsf_1_1Event.php
+* Color: https://www.sfml-dev.org/documentation/3.0.2/classsf_1_1Color.html
+* Font: https://www.sfml-dev.org/tutorials/3.0/graphics/text/ and https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Font.html
+* Text: https://www.sfml-dev.org/tutorials/3.0/graphics/text/ and https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Text.html
+* Sprite: https://www.sfml-dev.org/tutorials/3.0/graphics/sprite/ and https://www.sfml-dev.org/documentation/3.0.0/classsf_1_1Sprite.html
+* Clock: https://www.sfml-dev.org/documentation/3.0.2/classsf_1_1Clock.html and https://www.sfml-dev.org/documentation/2.6.1/classsf_1_1Clock.php
 
 
-
-
-
-##### FILE EXPLANATIONS:
-
-Included is a basic template for a memory matching card game, created using the SFML library. There is an assets folder with all of the card images, fonts, and other images. There is a `card` class (no touch plz), and there are 6 "main.cpp" files. The "main.cpp" files will be explained here:
-
-* `main_original.cpp` <- the original unorganized game that needs to be reviewed and abstracted.
-* `main_abstracted.cpp` <- base game without any features added, but the above functions are implemented.
-* `main_time.cpp` <- `main_abstracted` with timer implemented.
-* `main_strike.cpp` <- `main_abstracted` with strikes implemented.
-* `main_percent.cpp` <- `main_abstracted` with percent completion implemented.
-* `main_full.cpp` <- full game with all features implemented.
-
-
-
-The students should first work on abstracting main\_original.cpp. This is to familiarize themselves with the code. If they are not able to get it to run without errors after a while, then give them main\_abstracted.cpp and tell them to work on implementing one of the features. Ideally, they should have put in effort to abstract the main\_original.cpp and gotten most of the way into implementing one of the features before lab time is over. If a student doesn't complete the feature to the fullest ability, it's fine; give them extra credit.
-
-
-
-The `main_time.cpp`, `main_strike.cpp`, and `main_percent.cpp` don't have to be shown in class or given to the students. I included them mostly for documentation purposes so that it is better understood which part of the code does what (and also what some example code would look like for a student that chose to do one of the features). The `main_full.cpp` is the fully featured game so that we can show the students what the full game looks like in case they want to work on that later.
 
 ##### 
 

@@ -57,7 +57,7 @@ int main() {
     float startY = 80.f;
     for (int i = 0; i < 16; ++i)
         cards.at(i).setPosition(startX + (i % 4) * (cardWidth + 10), startY + (i / 4) * (cardHeight + 10));
-    
+
     //Initialize game logic
     std::vector<int> flipped;
     sf::Clock clock;
